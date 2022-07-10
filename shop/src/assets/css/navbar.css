@@ -1,0 +1,42 @@
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+ul {
+  display: flex;
+}
+
+ul > li > a {
+  padding: 12px 20px;
+}
+
+.left-nav > li > a,
+.right-nav > li > a {
+  color: #343a40;
+}
+
+.left-nav > li > a {
+  font-family: SUIT-ExtraBold;
+}
+
+.left-nav {
+  padding-right: 20px;
+}
+
+.right-nav {
+  position: relative;
+  padding-left: 20px;
+}
+
+.right-nav::after {
+  position: absolute;
+  content: "";
+  background-color: #343a40;
+  width: 1px;
+  height: 18px;
+  left: 0;
+  top: 11px;
+}
