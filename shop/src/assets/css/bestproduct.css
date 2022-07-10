@@ -1,0 +1,35 @@
+.best-item-section {
+  padding: 0 30px;
+}
+
+.best-item-wrap {
+  display: flex;
+}
+
+.best-item-box {
+  margin-right: 34px;
+}
+
+.best-item-box:last-child {
+  margin-right: 0;
+}
+
+.best-product > img {
+  width: 100%;
+}
+
+.best-item-box .description {
+  padding: 10px 0;
+}
+
+.best-item-box .description .bold {
+  font-family: "SUIT-ExtraBold";
+  color: #9775fa;
+  margin-bottom: 5px;
+}
+
+.best-item-box .description .title {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 8px;
+}

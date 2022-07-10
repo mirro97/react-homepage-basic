@@ -7,6 +7,9 @@ nav {
 
 ul {
   display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  border-bottom: 1px solid #f1f3f5;
 }
 
 ul > li > a {

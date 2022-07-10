@@ -1,4 +1,12 @@
+.banner-section {
+  margin: 2rem 0;
+  padding: 0 28px;
+}
+
 .banner {
   background-color: rgb(243, 243, 243);
-  padding: 60px 0;
+  height: 400px;
+  background-image: url("../images/애플워치.png");
+  background-size: cover;
+  background-position: center;
 }
