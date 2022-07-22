@@ -1,9 +1,10 @@
+import { Link } from "react-router-dom";
 import "../assets/css/header.css";
 function Header() {
   return (
     <header>
       <h1>
-        <a href="#home">SHOP</a>
+        <Link to="/">SHOP</Link>
       </h1>
     </header>
   );

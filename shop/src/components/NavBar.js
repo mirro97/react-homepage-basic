@@ -1,25 +1,36 @@
+import { Link, useNavigate, Outlet } from "react-router-dom";
+
 import "../assets/css/navbar.css";
 
 function NavBar() {
+  let navigate = useNavigate();
+
   return (
     <nav>
       <ul className="left-nav">
         <li>
-          <a href="#All">ALL</a>
+          <Link to="All">ALL</Link>
         </li>
         <li>
-          <a href="#Women">WOMEN</a>
+          <Link to="women">WOMEN</Link>
         </li>
         <li>
-          <a href="#Men">MEN</a>
+          <Link to="men">MEN</Link>
         </li>
       </ul>
       <ul className="right-nav">
         <li>
-          <a href="#Event">Event</a>
+          <Link
+            onClick={() => {
+              navigate("/event");
+            }}
+            // to="event"
+          >
+            Event
+          </Link>
         </li>
         <li>
-          <a href="#Brand">Brand</a>
+          <Link to="brand">Brand</Link>
         </li>
       </ul>
     </nav>
