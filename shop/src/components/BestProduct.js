@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link, useNavigate, Outlet } from "react-router-dom";
 
 import "../assets/css/bestproduct.css";
 import bestItemList from "../assets/BestItemdata.js";
@@ -22,14 +23,18 @@ function BestProduct() {
 function BestCard(props) {
   return (
     <li className="best-item-box">
-      <div className="best-product">
-        <img src={props.item.src} alt="베스트 상품"></img>
-      </div>
-      <div className="description">
-        <span className="bold">BEST</span>
-        <span className="title">{props.item.title}</span>
-        <span className="price">{props.item.price} &#8361;</span>
-      </div>
+      <Link to="/detail">
+        <a>
+          <div className="best-product">
+            <img src={props.item.src} alt="베스트 상품"></img>
+          </div>
+          <div className="description">
+            <span className="bold">BEST</span>
+            <span className="title">{props.item.title}</span>
+            <span className="price">{props.item.price} &#8361;</span>
+          </div>
+        </a>
+      </Link>
     </li>
   );
 }

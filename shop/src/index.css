@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 12px;
+  font-size: 14px;
   box-sizing: border-box;
   color: rgb(32, 33, 36);
 }
@@ -33,6 +33,8 @@ code {
 
 h1,
 h2 {
+  padding: 0;
+  margin: 0;
   font-family: "SUIT-ExtraBold";
 }
 
@@ -61,4 +63,8 @@ p {
   padding: 0;
   margin: 0;
   display: block;
+}
+
+.page-section {
+  padding: 0 30px;
 }

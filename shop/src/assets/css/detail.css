@@ -1,0 +1,108 @@
+/* brand css */
+.brand-wrap {
+  display: flex;
+  padding: 52px 0 60px 0;
+}
+
+.brand-img {
+  width: 74px;
+  height: 74px;
+}
+
+.brand-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.brand-info {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.brand-info h2 {
+  margin-bottom: 10px;
+}
+
+/* detail css */
+.detail-top {
+  display: flex;
+}
+
+.detail-top .main-img {
+  width: 47%;
+}
+
+.main-img img {
+  width: 100%;
+}
+
+.detail-top .detail-info {
+  flex: 1;
+  width: 100%;
+  padding-left: 45px;
+}
+
+.detail-info h2 {
+  font-size: 23px;
+  margin-bottom: 20px;
+}
+
+.review {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.review .star {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.review .grade {
+  font-size: 17px;
+  margin-right: 5px;
+}
+
+.review .count {
+  font-size: 15px;
+  color: #868e96;
+}
+
+.price {
+  font-size: 24px;
+  border-bottom: 1px solid #c5c5c6;
+  padding-bottom: 20px;
+}
+
+/* delivery css */
+.delivery {
+  padding: 20px 0;
+  border-bottom: 1px solid #c5c5c6;
+}
+
+.delivery .fee,
+.delivery .tip {
+  display: flex;
+}
+
+.delivery .fee .description:first-child,
+.delivery .tip .description {
+  padding-top: 20px;
+}
+
+.delivery .fee .description:last-child {
+  padding-top: 10px;
+}
+
+.delivery .title {
+  width: 105px;
+  padding: 20px 0;
+  margin-right: 20px;
+}
+
+.detail-info .about {
+  padding: 20px 0;
+}

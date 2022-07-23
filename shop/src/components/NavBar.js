@@ -21,9 +21,10 @@ function NavBar() {
       <ul className="right-nav">
         <li>
           <Link
-            onClick={() => {
-              navigate("/event");
-            }}
+            to="/event"
+            // onClick={() => {
+            //   navigate("/event");
+            // }}
             // to="event"
           >
             Event
