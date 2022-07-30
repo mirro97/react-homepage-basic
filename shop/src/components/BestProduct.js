@@ -23,17 +23,15 @@ function BestProduct() {
 function BestCard(props) {
   return (
     <li className="best-item-box">
-      <Link to="/detail">
-        <a>
-          <div className="best-product">
-            <img src={props.item.src} alt="베스트 상품"></img>
-          </div>
-          <div className="description">
-            <span className="bold">BEST</span>
-            <span className="title">{props.item.title}</span>
-            <span className="price">{props.item.price} &#8361;</span>
-          </div>
-        </a>
+      <Link to={`/detail/${props.item.p_id}`}>
+        <div className="best-product">
+          <img src={props.item.src} alt="베스트 상품"></img>
+        </div>
+        <div className="description">
+          <span className="bold">BEST</span>
+          <span className="title">{props.item.title}</span>
+          <span className="price">{props.item.price} &#8361;</span>
+        </div>
       </Link>
     </li>
   );

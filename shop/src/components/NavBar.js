@@ -20,19 +20,18 @@ function NavBar() {
       </ul>
       <ul className="right-nav">
         <li>
-          <Link
-            to="/event"
-            // onClick={() => {
-            //   navigate("/event");
-            // }}
-            // to="event"
-          >
-            Event
-          </Link>
+          <Link to="/event">Event</Link>
         </li>
         <li>
           <Link to="brand">Brand</Link>
         </li>
+        {/* <li
+          onClick={() => {
+            navigate("/detail");
+          }}
+        >
+          hi
+        </li> */}
       </ul>
     </nav>
   );
