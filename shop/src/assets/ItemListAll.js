@@ -1,31 +1,5 @@
 let itemListAll = [
   {
-    p_id: 1,
-    brand: "diptyque",
-    brandImg:
-      "https://www.trndf.com/news/data/20190729/p1065571185271202_891_thum.jpg",
-    brandInfo:
-      "파리의 생 제르망 34번가 거리의 부티크였던 이름을 딴 브랜드로 '두 패널로 만들어진 예술품' 이라는 뜻을 가진 그리스어 입니다.",
-    type: "best",
-    title: "diptyque paris Do Son Eau de Parfum",
-    price: "165,000",
-    src: "https://user-images.githubusercontent.com/45249021/180386117-b1c3a275-66be-4fd0-af29-51384f4fa4ee.png",
-    description:
-      "파리의 생 제르망 34번가 거리의 부티크였던 이름을 딴 브랜드로 	&#39;두 패널로 만들어진 예술품&#39; 이라는 뜻을 가진 그리스어 입니다.",
-    detail: "",
-    detailImage:
-      "https://perfumegraphy.com/web/upload/NNEditor/20210908/b3617d260142e35e179b9e258ed12ea7.jpg",
-    reviewCount: "513",
-    grade: 4.8,
-
-    deliveryFee: [
-      "3,000원",
-      "(제주도를 포함한 도서/산간지역은 추가 배송비 5,000원)",
-    ],
-    deliveryTip: "90,000 원 이상 구매 시 무료",
-    volume: ["75ml"],
-  },
-  {
     p_id: 4,
     brand: "diptyque",
     brandImg:
@@ -47,6 +21,32 @@ let itemListAll = [
     deliveryFee: ["무료배송"],
     deliveryTip: "",
     volume: [],
+  },
+  {
+    p_id: 1,
+    brand: "diptyque",
+    brandImg:
+      "https://www.trndf.com/news/data/20190729/p1065571185271202_891_thum.jpg",
+    brandInfo:
+      "파리의 생 제르망 34번가 거리의 부티크였던 이름을 딴 브랜드로 '두 패널로 만들어진 예술품' 이라는 뜻을 가진 그리스어 입니다.",
+    type: "best",
+    title: "diptyque paris Do Son Eau de Parfum",
+    price: "165,000",
+    src: "https://user-images.githubusercontent.com/45249021/180386117-b1c3a275-66be-4fd0-af29-51384f4fa4ee.png",
+    description:
+      "파리의 생 제르망 34번가 거리의 부티크였던 이름을 딴 브랜드로 	'두 패널로 만들어진 예술품' 이라는 뜻을 가진 그리스어 입니다.",
+    detail: "",
+    detailImage:
+      "https://perfumegraphy.com/web/upload/NNEditor/20210908/b3617d260142e35e179b9e258ed12ea7.jpg",
+    reviewCount: "513",
+    grade: 4.8,
+
+    deliveryFee: [
+      "3,000원",
+      "(제주도를 포함한 도서/산간지역은 추가 배송비 5,000원)",
+    ],
+    deliveryTip: "90,000 원 이상 구매 시 무료",
+    volume: ["75ml"],
   },
   {
     p_id: 2,

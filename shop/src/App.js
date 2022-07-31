@@ -7,6 +7,7 @@ import Main from "./routes/Main";
 import Detail from "./routes/Detail";
 import Event from "./routes/Event";
 import NotFoundPage from "./routes/404";
+import Cart from "./routes/Cart";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="current" element={<div>현재 진행중인 이벤트</div>} />
         </Route>
         <Route path="/detail/:id" element={<Detail />} />
+        <Route path="/cart" element={<Cart />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </div>

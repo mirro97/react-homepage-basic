@@ -86,6 +86,7 @@
 .delivery .fee,
 .delivery .tip {
   display: flex;
+  margin-bottom: 15px;
 }
 
 .delivery .fee .description:first-child,

@@ -10,7 +10,9 @@ export default function Detail() {
 
   let detail = item[param.id];
 
-  console.log(detail);
+  const onClick = () => {
+    console.log("!확인");
+  };
 
   return (
     <div className="page-section">
@@ -56,11 +58,22 @@ export default function Detail() {
                 })}
               </div>
             </div>
-            <div className="tip">
-              <span className="title">무료 배송 조건</span>
-              <span className="description">{detail.deliveryTip}</span>
+            {detail.deliveryTip !== "" ? (
+              <div className="tip">
+                <span className="title">무료 배송 조건</span>
+                <span className="description">{detail.deliveryTip}</span>
+              </div>
+            ) : null}
+
+            <div className="btn-wrap">
+              {/* <BasicButton variants="white" children="장바구니 담기" /> */}
+              <BasicButton
+                variants="grayblue"
+                children="구매하기"
+                onClick={onClick}
+              />
+              <button onClick={onClick}>클릭</button>
             </div>
-            <BasicButton content="구매하기" />
           </div>
           <p className="about">{detail.description}</p>
         </div>
