@@ -5,13 +5,15 @@ import itemListAll from "../assets/ItemListAll.js";
 import BasicButton from "../components/styled/Button";
 
 export default function Detail() {
-  let item = itemListAll;
+  let itemList = itemListAll;
   let param = useParams();
 
-  let detail = item[param.id];
+  // let detail = item[param.id];
+
+  let detail = itemList.find((item) => item.p_id == param.id);
 
   const onClick = () => {
-    console.log("!확인");
+    alert("장바구니에 담았습니다.");
   };
 
   return (

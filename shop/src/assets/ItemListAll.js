@@ -1,28 +1,5 @@
 let itemListAll = [
   {
-    p_id: 4,
-    brand: "diptyque",
-    brandImg:
-      "https://www.trndf.com/news/data/20190729/p1065571185271202_891_thum.jpg",
-    brandInfo:
-      "파리의 생 제르망 34번가 거리의 부티크였던 이름을 딴 브랜드로 '두 패널로 만들어진 예술품' 이라는 뜻을 가진 그리스어 입니다.",
-    type: "banner",
-    title: "Apple Watch Series 7",
-    price: "499,000",
-    src: "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ML753_VW_34FR+watch-41-stainless-silver-cell-7s_VW_34FR_WF_CO?wid=1400&hei=1400&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1630042317000%2C1652022773106",
-    description: "스타라이트 알루미늄 케이스, 그리고 스포츠 밴드",
-    detail:
-      "알루미늄 케이스는 가볍고 100% 재활용된 항공우주 등급의 합금으로 만들어집니다. 견고하면서도 놀라울 정도로 부드러운 고성능 불화탄성중합체 소재로 만들어진 스포츠 밴드. 혁신적인 핀앤턱 잠금장치를 적용해 제작되었습니다.",
-    detailImage:
-      "https://thumbnail6.coupangcdn.com/thumbnails/remote/q89/image/retail/images/4670699780687803-dbaf65e4-225d-4b21-ba1d-8028931e48a4.jpg",
-    reviewCount: "14,930",
-    grade: 4.9,
-
-    deliveryFee: ["무료배송"],
-    deliveryTip: "",
-    volume: [],
-  },
-  {
     p_id: 1,
     brand: "diptyque",
     brandImg:
@@ -53,8 +30,7 @@ let itemListAll = [
     brand: "diptyque",
     brandImg:
       "https://www.trndf.com/news/data/20190729/p1065571185271202_891_thum.jpg",
-    brandInfo:
-      "파리의 생 제르망 34번가 거리의 부티크였던 이름을 딴 브랜드로 '두 패널로 만들어진 예술품' 이라는 뜻을 가진 그리스어 입니다.",
+    brandInfo: "애플워치",
     type: "best",
     title: "Liefmans Cuvee Brut",
     price: "84,000",
@@ -79,8 +55,7 @@ let itemListAll = [
     brand: "diptyque",
     brandImg:
       "https://www.trndf.com/news/data/20190729/p1065571185271202_891_thum.jpg",
-    brandInfo:
-      "파리의 생 제르망 34번가 거리의 부티크였던 이름을 딴 브랜드로 '두 패널로 만들어진 예술품' 이라는 뜻을 가진 그리스어 입니다.",
+    brandInfo: "레인보우 맨투맨",
     type: "best",
     title: "RAINBOW DRESS",
     price: "69,000",
@@ -97,6 +72,29 @@ let itemListAll = [
       "3,000원",
       "(제주도를 포함한 도서/산간지역은 추가 배송비 5,000원)",
     ],
+    deliveryTip: "",
+    volume: [],
+  },
+  {
+    p_id: 4,
+    brand: "diptyque",
+    brandImg:
+      "https://www.trndf.com/news/data/20190729/p1065571185271202_891_thum.jpg",
+    brandInfo:
+      "파리의 생 제르망 34번가 거리의 부티크였던 이름을 딴 브랜드로 '두 패널로 만들어진 예술품' 이라는 뜻을 가진 그리스어 입니다.",
+    type: "banner",
+    title: "Apple Watch Series 7",
+    price: "499,000",
+    src: "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ML753_VW_34FR+watch-41-stainless-silver-cell-7s_VW_34FR_WF_CO?wid=1400&hei=1400&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1630042317000%2C1652022773106",
+    description: "스타라이트 알루미늄 케이스, 그리고 스포츠 밴드",
+    detail:
+      "알루미늄 케이스는 가볍고 100% 재활용된 항공우주 등급의 합금으로 만들어집니다. 견고하면서도 놀라울 정도로 부드러운 고성능 불화탄성중합체 소재로 만들어진 스포츠 밴드. 혁신적인 핀앤턱 잠금장치를 적용해 제작되었습니다.",
+    detailImage:
+      "https://thumbnail6.coupangcdn.com/thumbnails/remote/q89/image/retail/images/4670699780687803-dbaf65e4-225d-4b21-ba1d-8028931e48a4.jpg",
+    reviewCount: "14,930",
+    grade: 4.9,
+
+    deliveryFee: ["무료배송"],
     deliveryTip: "",
     volume: [],
   },
