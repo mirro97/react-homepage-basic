@@ -55,7 +55,17 @@ let stock = createSlice({
       img: "https://img.29cm.co.kr/next-product/2021/09/06/6bc2c12cdea34e8e80c85cd13d0042cb_20210906112043.jpg?width=700",
     },
   ],
+
+  //  state 수정해주는 함수 -> 여러개 선언 가능
+  reducers: {
+    removeItem() {
+      return alert("삭제합니다!");
+    },
+  },
 });
+
+// 만들어 놓은 함수 export 하기
+export let { removeItem } = stock.actions;
 
 export default configureStore({
   // state 등록

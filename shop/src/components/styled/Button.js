@@ -23,10 +23,14 @@ const VARIANTS = {
   `,
 };
 
-export default function Button({ variants, children }) {
+export default function Button({ variants, children, onClick }) {
   const variantStyle = VARIANTS[variants];
 
-  return <BasicButton variantStyle={variantStyle}>{children}</BasicButton>;
+  return (
+    <BasicButton onClick={onClick} variantStyle={variantStyle}>
+      {children}
+    </BasicButton>
+  );
 }
 
 let BasicButton = styled.button`

@@ -72,7 +72,6 @@ export default function Detail() {
                 children="구매하기"
                 onClick={onClick}
               />
-              <button onClick={onClick}>클릭</button>
             </div>
           </div>
           <p className="about">{detail.description}</p>

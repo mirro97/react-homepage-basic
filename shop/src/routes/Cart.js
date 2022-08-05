@@ -1,23 +1,12 @@
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import Button from "../components/styled/Button";
+import { removeItem } from "../store";
 
 export default function Cart() {
   let cartData = useSelector((state) => state.stock);
 
-  //   {
-  //     p_id: 6,
-  //     brand: "영리영리",
-  //     title: "Foi ring, AMBER (YLCSSARI13AB)",
-  //     option: "S 12-14호",
-  //     num: 1,
-  //     cost: "39,000",
-  //     deliveryFee: "3000",
-  //     deliveryTip: [
-  //       "영리영리",
-  //       "제품으로만 50,000원 이상 구매시 무료배송 됩니다.",
-  //       "제주도를 포함한 도서/산간지역은 추가배송비 3,000",
-  //     ],
-  //     img: "https://img.29cm.co.kr/next-product/2021/12/13/65ea4509357d439a96e95b8a89be06d8_20211213172345.jpg?width=700",
-  //   },
+  // dispatch 는 store.js 로 요청을 보내주는 함수이다.
+  let dispatch = useDispatch();
 
   return (
     <div>
@@ -32,8 +21,72 @@ export default function Cart() {
           <div>주문금액</div>
           <div>배송비</div>
         </div>
-        <div className="t-body"></div>
+        <div className="t-body">
+          {cartData.map((item, index) => {
+            return (
+              <div className="t-row">
+                <div>
+                  <input type="checkbox" />
+                </div>
+                <div>
+                  <img className="brand-img" src={item.img} alt="상품 이미지" />
+                  <span>{item.brand}</span>
+                </div>
+                <div>{item.num}</div>
+                <div>{item.cost}</div>
+                <div>
+                  <span>{item.deliveryFee}</span>
+                  {item.deliveryTip
+                    ? item.deliveryTip.map((tip) => {
+                        <span>{tip}</span>;
+                      })
+                    : ""}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+        <Button
+          variants="grayblue"
+          children="삭제"
+          onClick={() => {
+            dispatch(removeItem());
+          }}
+        />
       </section>
+      <style jsx="true">
+        {`
+          .t-header {
+            display: flex;
+            width: 100%;
+          }
+
+          .t-header > div,
+          .t-body > div {
+            padding: 10px 13px;
+            width: 100%;
+          }
+
+          .t-body {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+          }
+
+          .t-body .t-row {
+            display: flex;
+            width: 100%;
+          }
+
+          .t-row > div {
+            width: 100%;
+          }
+
+          .t-body > .brand-img {
+            width: 100px;
+          }
+        `}
+      </style>
     </div>
   );
 }
